@@ -1,0 +1,68 @@
+@import 'css-reset-and-normalize/scss/reset-and-normalize.scss';
+@import './variables/mixins';
+@import './variables/colors';
+@import './variables/measures';
+@import './blocks/buttons';
+
+.nav{
+    &--main{
+        @include align-items(center);
+        display: grid;
+        grid-template-columns: 60px auto auto auto;
+        background: linear-gradient($gradient-blue,$brand);
+        .nav_menu_item{
+            &:not(:last-child){
+                .nav_menu_link{
+                    margin-right: 15px;
+                }
+            }
+        }
+        .nav_menu_link{
+            color: #fff;
+        }
+    }
+    &_left-menu, &_right-menu, &_loginregister-menu{
+        @include flexbox;
+        @include flex-direction(row);
+        .nav_menu_link{
+            text-decoration: none;
+        }
+    }
+    &_left-menu{
+        @include justify-content(flex-end);
+    }
+    &_right-menu{
+        @include justify-content(flex-end);
+        @media(max-width: 768px){
+            @include flexbox;
+            @include flex-direction(column);
+            @include align-items(center);
+            @include justify-content(center);
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba($brand-ligther,0.95);
+            height: 100%;
+            width: 100%;
+            .nav_menu_item{
+                &:not(:last-child){
+                    .nav_menu_link{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .nav_menu_link{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                display: block;
+            }
+        }
+    }
+    &_loginregister-menu{
+        @include justify-content(flex-end);
+        .btn:first-child{
+            margin-right: 10px;
+        }
+    }
+}

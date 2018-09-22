@@ -1,0 +1,91 @@
+//Basic parameters
+a[class*='btn']{
+    text-decoration: none;
+}
+.btn{
+    line-height: 40px;
+    padding: 0 25px;
+    border-radius: $border-radius;
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: none;
+    border: 2px solid;
+    &--sm{
+        font-size: 1rem;
+    }
+    &--md{
+        font-size: 1.5rem;
+    }
+    &--xl{
+        font-size: 2rem;
+    }
+    &--white{
+        background-color: #fff;
+        color: $gray-darken;
+        border-color: #fff;
+    }
+    &--brand{
+        border-color: $brand;
+        background-color: $brand;
+        color: #fff;
+    }
+    &--secondary{
+        border-color: $secondary-brand;
+        background-color: $secondary-brand;
+        color: #fff
+    }
+    &--alternative-yellow{
+        border-color: $alternative-yellow;
+        background-color: $alternative-yellow;
+        color: $gray-darken;
+    }
+    &--alternative-blue{
+        border-color: $alternative-blue;
+        background-color: $alternative-blue;
+        color: #fff;
+    }
+    &--alternative-red{
+        border-color: $alternative-red;
+        background-color: $alternative-red;
+        color: #fff;
+    }
+}
+.btn-ghost{
+    background-color: transparent;
+    border: 2px solid;
+    border-radius: $border-radius;
+    font-size: 1rem;
+    &--white{
+        border-color: #fff;
+        color: #fff;
+    }
+    &--brand{
+        border-color: $brand;
+        color: $brand;
+    }
+    &--secondary{
+        border-color: $secondary-brand;
+        color: $secondary-brand;
+    }
+    &--alternative-yellow{
+        border-color: $alternative-yellow;
+        color: $alternative-yellow;
+    }
+    &--alternative-blue{
+        border-color: $alternative-blue;
+        color: $alternative-blue;
+    }
+    &--alternative-red{
+        border-color: $alternative-red;
+        color: $alternative-red;
+    }
+}
+.btn-special{
+    border-radius: 50px;
+}
+.btn-circle{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 1rem;
+}
