@@ -1,46 +1,93 @@
-.search-wrapper{
+.search-wrapper {
     display: grid;
-    grid-template-rows: 80px auto;
-    grid-gap: 0 15px;
+    grid-template-rows: auto auto;
+    grid-template-columns: max-width-calc($max-width);
 }
-.search-filters{
-    display: grid;
-    grid-template-columns: 80% 20%;
+
+.search-filters {
     background-color: #fff;
     border-bottom: 1px solid $gray-ligthen;
-    padding: 0 15px;
-    &_left, &_right{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-template-columns: max-width-calc($max-width);
+    grid-template-rows: auto 70px;
+
+    &_search {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        padding: 10px 15px;
+        border-bottom: 1px solid $gray-ligthen;
+    }
+
+    &_input {
+        border: none;
+        width: 100%;
+        line-height: 60px;
+        border-radius: $border-radius;
+        background-color: rgba($gray-ligthen, 0.3);
+        font-size: 1.5rem;
+        color: $gray;
+        text-align: center;
+        font-weight: 100;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &_inner {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        height: 100%;
+        @include align-items(center);
+    }
+
+    &_left,
+    &_right {
         @include flexbox;
         @include align-items(center);
     }
-    &_left{
-        @include justify-content(center);
+
+    &_left {
+        @include justify-content(flex-start);
         padding-right: 15px;
-        .search-filters_filter{
-            &:not(:last-child){
+
+        .search-filters_filter {
+            &:not(:last-child) {
                 margin-right: 40px;
             }
         }
     }
-    &_right{
+
+    &_right {
         padding: 0 15px;
         @include justify-content(flex-start);
     }
-    &_filters{
+
+    &_filters {
         @include flexbox;
     }
 }
 
-.search-results{
+.search-results {
     display: grid;
-    grid-template-columns: repeat(4, 23%);
-    grid-gap: 20px 1.5%;
+    grid-template-columns: repeat(4, calc(25% - 16px));
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-gap: 20px;
     padding-top: 35px;
     @include justify-content(center);
-    @media(max-width: 992px){
+
+    @media(max-width: 992px) {
         grid-template-columns: repeat(3, 31.333%);
     }
-    @media(max-width: 768px){
+
+    @media(max-width: 768px) {
         grid-template-columns: repeat(2, 48%);
     }
 }

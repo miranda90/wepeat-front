@@ -1,28 +1,31 @@
 <template>
   <div class="search-wrapper">
     <div class="search-filters">
-      <div class="search-filters_left">
-        <ul class="search-filters_filters">
-          <li class="search-filters_filter">
-            <a href="" class="search-filters_btn">Por categoría</a>
-          </li>
-          <li class="search-filters_filter">
-            <a href="" class="search-filters_btn">Por equipamiento</a>
-          </li>
-          <li class="search-filters_filter">
-            <a href="" class="search-filters_btn">Por colecciones</a>
-          </li>
-          <li class="search-filters_filter">
-            <a href="" class="search-filters_btn">Por alérgenos</a>
-          </li>
-        </ul>
-      </div>
-      <div class="search-filters_right">
-        <ul class="search-filters_filters">
-          <li class="search-filters_filter">
-            <a href="" class="search-filters_btn">Ordenar por...</a>
-          </li>
-        </ul>
+      <div class="search-filters_search"><input type="text" placeholder="Buscar por planificador, receta, tags..." class="search-filters_input"></div>
+      <div class="search-filters_inner">
+        <div class="search-filters_left">
+          <ul class="search-filters_filters">
+            <li class="search-filters_filter">
+              <a href="" class="search-filters_btn">Por categoría</a>
+            </li>
+            <li class="search-filters_filter">
+              <a href="" class="search-filters_btn">Por equipamiento</a>
+            </li>
+            <li class="search-filters_filter">
+              <a href="" class="search-filters_btn">Por colecciones</a>
+            </li>
+            <li class="search-filters_filter">
+              <a href="" class="search-filters_btn">Por alérgenos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-filters_right">
+          <ul class="search-filters_filters">
+            <li class="search-filters_filter">
+              <a href="" class="search-filters_btn">Ordenar por...</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="search-results">
