@@ -1,0 +1,23 @@
+.custom-check{
+    input{
+        display: none;
+        &:checked{
+            .lbl-check{
+                &::before{
+                    background-color: $brand;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .lbl-check{
+        &::before{
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: $border-radius;
+            background-color: $gray-ligthen;
+            text-align: center;
+        }
+    }
+}

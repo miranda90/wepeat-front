@@ -1,0 +1,103 @@
+.nav{
+    &--main{
+        @include align-items(center);
+        display: grid;
+        grid-template-columns: 150px auto auto auto;
+        padding: 10px 15px;
+        background: linear-gradient($gradient-blue,$brand-ligther);
+        @media(max-width: 768px){
+            grid-template-columns: 60px auto auto auto;
+        }
+        .nav_menu_item{
+            &:not(:last-child){
+                .nav_menu_link{
+                    margin-right: 15px;
+                }
+            }
+        }
+        .nav_menu_link{
+            color: #fff;
+        }
+    }
+    &_left-menu, &_right-menu, &_loginregister-menu{
+        @include flexbox;
+        @include flex-direction(row);
+        .nav_menu_link{
+            text-decoration: none;
+        }
+    }
+    &_left-menu{
+        @include justify-content(flex-end);
+    }
+    &_right-menu{
+        @include justify-content(flex-end);
+        @media(max-width: 992px){
+            display: none;
+            @include flex-direction(column);
+            @include align-items(center);
+            @include justify-content(center);
+            position: fixed;
+            left: 0;
+            top: 0;
+            background-color: rgba($brand-ligther,0.95);
+            height: 100%;
+            width: 100%;
+            &.opened{
+                @include flexbox;
+            }
+            .nav_menu_item{
+                &:not(:last-child){
+                    .nav_menu_link{
+                        margin-bottom: 25px;
+                    }
+                }
+            }
+            .nav_menu_link{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.5rem;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    &_loginregister-menu{
+        @include justify-content(flex-end);
+        @include align-items(center);
+        .btn{
+            display: inline-block;
+        }
+        li:not(:last-child){
+            .btn:first-child{
+                margin-right: 10px;
+            }
+        }
+        @media(max-width: 992px){
+            .btn{
+                padding: 0;
+                background-color: transparent;
+                border: none;
+                color: #fff;
+            }
+        }
+    }
+    .separator_menu{
+        color: #fff;
+        display: inline-block;
+        margin-right: 10px;
+        @media(min-width: 992px){
+            display: none;
+        }
+    }
+}
+
+.logo-mobile{
+    @media(min-width: 768px){
+        display: none;
+    }
+}
+.logo-desktop{
+    @media(max-width: 767px){
+        display: none;
+    }
+}

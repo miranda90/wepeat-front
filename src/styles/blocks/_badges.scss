@@ -1,0 +1,37 @@
+//Basic badges
+.badge{
+    border-radius: 3px;
+    text-decoration: none;
+    &-card{
+        font-size: 10px;
+        line-height: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 15px;
+        margin-bottom: 8px;
+    }
+    &-card_info{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0 10px;
+        font-size: 14px;
+        line-height: 1.4rem;
+        display: inline-block;
+    }
+    &--recipe, &--collection{
+        background-color: $brand;
+        color: #fff;
+    }
+    &--plan{
+        background-color: $secondary-brand;
+        color: #fff;
+    }
+    &--premium{
+        background-color: $alternative-yellow;
+        color: $gray-darken;
+    }
+}

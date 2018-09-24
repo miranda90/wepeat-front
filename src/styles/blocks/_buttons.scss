@@ -10,6 +10,9 @@ a[class*='btn']{
     font-size: 1rem;
     text-decoration: none;
     border: 2px solid;
+    &:hover{
+        background-color: currentColor;
+    }
     &--sm{
         font-size: 1rem;
     }

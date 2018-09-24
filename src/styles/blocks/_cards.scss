@@ -1,0 +1,36 @@
+.card{
+    text-align: left;
+    &-img{
+        position: relative;
+    }
+    &-content{
+        padding: 10px;
+        margin-top: -22px;
+        position: relative;
+    }
+    &-title{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 1.4rem;
+        margin-bottom: 5px;
+        @media(max-width: 992px){
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+        @media(max-width: 768px){
+            font-size: 1.5rem;
+            line-height: 2rem;
+        }
+    }
+    &-category{
+        font-style: italic;
+        color: $gray-darken;
+        display: block;
+        margin-bottom: 10px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    &-excerpt{
+        color: $gray;
+    }
+}
