@@ -1,17 +1,19 @@
 //Basic badges
-.badge{
+.badge {
     border-radius: 3px;
     text-decoration: none;
-    &-card{
+
+    &-card {
         font-size: 10px;
-        line-height: 1rem;
+        line-height: 1.1rem;
         text-transform: uppercase;
         font-weight: bold;
         display: inline-block;
-        padding: 0 15px;
+        padding: 2px 15px 0;
         margin-bottom: 8px;
     }
-    &-card_info{
+
+    &-card_info {
         position: absolute;
         top: 10px;
         right: 10px;
@@ -22,15 +24,19 @@
         line-height: 1.4rem;
         display: inline-block;
     }
-    &--recipe, &--collection{
+
+    &--recipe,
+    &--collection {
         background-color: $brand;
         color: #fff;
     }
-    &--plan{
+
+    &--plan {
         background-color: $secondary-brand;
         color: #fff;
     }
-    &--premium{
+
+    &--premium {
         background-color: $alternative-yellow;
         color: $gray-darken;
     }

@@ -1,28 +1,43 @@
-.card{
+.card {
     text-align: left;
-    &-img{
+
+    &-img {
         position: relative;
+
+        img {
+            border-radius: 5px;
+        }
     }
-    &-content{
+
+    &-content {
         padding: 10px;
         margin-top: -22px;
         position: relative;
     }
-    &-title{
-        font-weight: bold;
-        font-size: 22px;
+
+    &-title {
+        font-weight: 600;
+        font-size: 20px;
         line-height: 1.4rem;
-        margin-bottom: 5px;
-        @media(max-width: 992px){
+        margin-bottom: 10px;
+
+        @media(max-width: 992px) {
             font-size: 1.5rem;
             line-height: 2rem;
         }
-        @media(max-width: 768px){
+
+        @media(max-width: 768px) {
             font-size: 1.5rem;
             line-height: 2rem;
+        }
+
+        a {
+            color: $gray-darken;
+            text-decoration: none;
         }
     }
-    &-category{
+
+    &-category {
         font-style: italic;
         color: $gray-darken;
         display: block;
@@ -30,7 +45,9 @@
         text-decoration: none;
         font-size: 12px;
     }
-    &-excerpt{
+
+    &-excerpt {
         color: $gray;
+        font-size: 12px;
     }
 }

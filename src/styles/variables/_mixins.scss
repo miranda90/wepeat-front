@@ -188,5 +188,5 @@
 
 
 @function max-width-calc($max-width) {
-  @return calc((100% - #{$max-width})/2) #{$max-width} calc((100% - #{$max-width})/2);
+  @return calc((100% - #{$max-width})/2) 1fr calc((100% - #{$max-width})/2);
 }
