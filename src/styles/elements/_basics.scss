@@ -1,3 +1,23 @@
+%basic-grid {
+    grid-template-columns: 1fr 8fr 1fr;
+
+    @include respond-below(xl) {
+        grid-template-columns: 1fr 30fr 1fr;
+    }
+
+    @include respond-below(lg) {
+        grid-template-columns: 1fr 30fr 1fr;
+    }
+
+    @include respond-below(md) {
+        grid-template-columns: 1fr 30fr 1fr;
+    }
+
+    @include respond-below(sm) {
+        grid-template-columns: 1fr 30fr 1fr;
+    }
+}
+
 body {
     background-color: $body;
 }

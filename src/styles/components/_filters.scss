@@ -1,5 +1,25 @@
-.search-filters_btn{
+.search-filters_btn {
     font-size: 16px;
     line-height: 1rem;
     color: $gray-darken;
+    @include flexbox;
+    @include justify-content(center);
+
+    @include respond-below(md) {
+        font-size: 14px;
+    }
+
+    &:hover {
+        color: $brand;
+    }
+
+    svg {
+        margin-left: 3px;
+    }
+}
+
+.search-filters_filter-mobile {
+    @include respond-above(sm) {
+        display: none;
+    }
 }

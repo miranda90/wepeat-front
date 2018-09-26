@@ -1,9 +1,9 @@
 .nav {
     &--main {
-        padding: 10px 15px;
+        padding: 10px 0;
         background: linear-gradient($gradient-blue, $brand-ligther);
         display: grid;
-        grid-template-columns: max-width-calc($max-width);
+        @extend %basic-grid;
 
         .nav_menu_item {
             &:not(:last-child) {
@@ -21,7 +21,7 @@
     &-inner {
         @include align-items(center);
         display: grid;
-        grid-template-columns: 150px auto auto auto;
+        grid-template-columns: 150px auto 3fr 1fr;
         grid-column-start: 2;
         grid-column-end: 3;
 
@@ -38,11 +38,18 @@
 
         .nav_menu_link {
             text-decoration: none;
+            @include flexbox;
+            @include align-items(center);
+
+            svg {
+                margin-left: 3px;
+            }
         }
     }
 
     &_left-menu {
         @include justify-content(flex-start);
+        @include align-items(center);
         padding-left: 40px;
     }
 
@@ -126,6 +133,15 @@
 
 .logo-desktop {
     @media(max-width: 767px) {
+        display: none;
+    }
+}
+
+.nav-mobilebtn {
+    color: #fff;
+    margin-left: auto;
+
+    @media(min-width: 992px) {
         display: none;
     }
 }

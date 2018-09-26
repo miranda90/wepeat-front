@@ -1,8 +1,9 @@
 //Basic parameters
-a[class*='btn']{
+a[class*='btn'] {
     text-decoration: none;
 }
-.btn{
+
+.btn {
     line-height: 40px;
     padding: 0 25px;
     border-radius: $border-radius;
@@ -10,83 +11,102 @@ a[class*='btn']{
     font-size: 1rem;
     text-decoration: none;
     border: 2px solid;
-    &:hover{
+
+    &:hover {
         background-color: currentColor;
     }
-    &--sm{
+
+    &--sm {
         font-size: 1rem;
     }
-    &--md{
+
+    &--md {
         font-size: 1.5rem;
     }
-    &--xl{
+
+    &--xl {
         font-size: 2rem;
     }
-    &--white{
+
+    &--white {
         background-color: #fff;
-        color: $gray-darken;
+        color: $brand-darker;
         border-color: #fff;
     }
-    &--brand{
+
+    &--brand {
         border-color: $brand;
         background-color: $brand;
         color: #fff;
     }
-    &--secondary{
+
+    &--secondary {
         border-color: $secondary-brand;
         background-color: $secondary-brand;
         color: #fff
     }
-    &--alternative-yellow{
+
+    &--alternative-yellow {
         border-color: $alternative-yellow;
         background-color: $alternative-yellow;
         color: $gray-darken;
     }
-    &--alternative-blue{
+
+    &--alternative-blue {
         border-color: $alternative-blue;
         background-color: $alternative-blue;
         color: #fff;
     }
-    &--alternative-red{
+
+    &--alternative-red {
         border-color: $alternative-red;
         background-color: $alternative-red;
         color: #fff;
     }
 }
-.btn-ghost{
+
+.btn-ghost {
     background-color: transparent;
     border: 2px solid;
     border-radius: $border-radius;
     font-size: 1rem;
-    &--white{
+
+    &--white {
         border-color: #fff;
         color: #fff;
     }
-    &--brand{
+
+    &--brand {
         border-color: $brand;
         color: $brand;
     }
-    &--secondary{
+
+    &--secondary {
         border-color: $secondary-brand;
         color: $secondary-brand;
     }
-    &--alternative-yellow{
+
+    &--alternative-yellow {
         border-color: $alternative-yellow;
         color: $alternative-yellow;
     }
-    &--alternative-blue{
+
+    &--alternative-blue {
         border-color: $alternative-blue;
         color: $alternative-blue;
     }
-    &--alternative-red{
+
+    &--alternative-red {
         border-color: $alternative-red;
         color: $alternative-red;
     }
 }
-.btn-special{
+
+.btn-special {
     border-radius: 50px;
 }
-.btn-circle{
+
+.btn-circle {
     width: 50px;
     height: 50px;
     text-align: center;

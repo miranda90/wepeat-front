@@ -1,9 +1,15 @@
 //Banners wrapper
 .banners-block {
     display: grid;
-    grid-template-columns: 49% 49%;
-    @include justify-content(space-between);
+    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
     padding: 70px 0;
+
+    @include respond-below(sm) {
+        padding: 50px 0;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
 }
 
 //Basics banner block
@@ -12,6 +18,14 @@
     border-radius: $border-radius;
     overflow: hidden;
     position: relative;
+
+    @include respond-below(md) {
+        height: 280px;
+    }
+
+    @include respond-below(sm) {
+        height: 230px;
+    }
 
     &-content {
         @include flexbox;
@@ -33,6 +47,11 @@
         font-weight: bold;
         margin-bottom: 20px;
         color: #fff;
+
+        @include respond-below(sm) {
+            font-size: 2rem;
+            line-height: 2.3rem;
+        }
     }
 
     &-line {
@@ -46,5 +65,9 @@
         line-height: 1.4rem;
         color: #fff;
         text-decoration: none;
+
+        @include respond-below(sm) {
+            margin-top: 20px;
+        }
     }
 }

@@ -7,8 +7,23 @@
           <img src="./assets/wepeat-logo-mobile.svg" alt="" class="logo-mobile">
         </a>
         <ul class="nav_left-menu">
-          <li class="nav_menu_item"><a href="" class="nav_menu_link">Explorar</a></li>
-          <li class="nav_menu_item"><a href="" class="nav_menu_link">Buscar</a></li>
+          <li class="nav_menu_item">
+            <a href="" class="nav_menu_link">
+              Explorar
+              <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use xlink:href="feather-sprite.svg#chevron-down" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav_menu_item">
+            <a href="" class="nav_menu_link">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use xlink:href="feather-sprite.svg#search" />
+              </svg>
+            </a>
+          </li>
         </ul>
         <ul class="nav_right-menu">
           <li class="nav_menu_item"><a href="" class="nav_menu_link">¿Qué es Wepeat?</a></li>
@@ -21,7 +36,10 @@
           <span class="separator_menu">|</span>
           <li><a href="" class="btn btn--white">Registro</a></li>
         </ul>
-        <i data-feather="circle"></i>
+        <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="nav-mobilebtn">
+            <use xlink:href="feather-sprite.svg#menu" />
+        </svg>
       </div>
     </nav>
     <router-view/>

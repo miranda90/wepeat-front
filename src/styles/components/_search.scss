@@ -1,7 +1,7 @@
 .search-wrapper {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: max-width-calc($max-width);
+    @extend %basic-grid;
 }
 
 .search-filters {
@@ -11,7 +11,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
-    grid-template-columns: max-width-calc($max-width);
+    @extend %basic-grid;
     grid-template-rows: auto 70px;
 
     &_search {
@@ -57,9 +57,19 @@
         @include justify-content(flex-start);
         padding-right: 15px;
 
+        .search-filters_filters {
+            @include respond-below(sm) {
+                display: none;
+            }
+        }
+
         .search-filters_filter {
             &:not(:last-child) {
                 margin-right: 40px;
+
+                @include respond-below(md) {
+                    margin-right: 20px;
+                }
             }
         }
     }
@@ -71,6 +81,7 @@
 
     &_filters {
         @include flexbox;
+
     }
 }
 
@@ -91,19 +102,23 @@
 
     &_inner {
         display: grid;
-        grid-template-columns: repeat(4, calc(25% - 16px));
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-gap: 20px;
+        grid-template-columns: repeat(5, 1fr);
         @include justify-content(center);
 
-        @media(max-width: 992px) {
-            grid-template-columns: repeat(3, 31.333%);
+        @include respond-below(lg) {
+            grid-template-columns: repeat(4, 1fr);
         }
 
-        @media(max-width: 768px) {
-            grid-template-columns: repeat(2, 48%);
+        @include respond-below(md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include respond-below(sm) {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
