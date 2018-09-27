@@ -1,15 +1,16 @@
 //Basic badges
 .badge {
-    border-radius: 3px;
+    border-radius: $border-radius;
     text-decoration: none;
 
     &-card {
-        font-size: 8px;
-        line-height: 1.1rem;
+        font-size: 10px;
+        line-height: 1.2rem;
         text-transform: uppercase;
         display: inline-block;
         padding: 2px 15px 0;
         margin-bottom: 8px;
+        font-weight: 600;
         letter-spacing: 2.5px;
     }
 
@@ -38,13 +39,13 @@
 
     &--recipe,
     &--collection {
-        background-color: $brand;
-        color: #fff;
+        background-color: $brand-ligthen;
+        color: $brand-darken;
     }
 
     &--plan {
-        background-color: $secondary-brand;
-        color: #fff;
+        background-color: $secondary-brand-ligthen;
+        color: $secondary-brand-darken;
     }
 
     &--premium {
