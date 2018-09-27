@@ -1,3 +1,102 @@
+//Search cover
+.search-cover {
+    height: 85vh;
+    background-color: $brand-ligther;
+    display: grid;
+    @extend %basic-grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    @include justify-content(center);
+    @include align-items(center);
+    position: relative;
+    overflow: hidden;
+
+    &_img {
+        position: absolute;
+        max-width: 650px;
+
+        &--left {
+            left: -13vw;
+        }
+
+        &--right {
+            right: -15vw;
+        }
+    }
+
+    &_content {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        position: relative;
+        z-index: 99;
+    }
+
+    &_title {
+        color: #fff;
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    &_subtitle {
+        color: #fff;
+    }
+
+    &_searchbox {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+
+        &_block {
+            @include flexbox;
+            @include align-items(center);
+            background-color: #fff;
+            border-radius: 50px;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        &_input {
+            border: none;
+            line-height: 60px;
+            border-radius: 50px;
+            width: 100%;
+            padding: 0 10px;
+            background-color: #fff;
+            color: $gray;
+            font-size: 1.5rem;
+            text-align: center;
+            font-weight: 100;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 30px 0 rgba(#000, 0);
+            transition: box-shadow 0.3s;
+
+            &:focus {
+                box-shadow: 0 5px 30px 0 rgba(#000, 0.2);
+            }
+        }
+
+        &_btn {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            border: none;
+            position: absolute;
+            right: 5px;
+            background-color: $secondary-brand;
+            color: #fff;
+            border-radius: 50%;
+        }
+    }
+}
+
+
+//Search page
 .search-wrapper {
     display: grid;
     grid-template-rows: auto auto;
