@@ -101,7 +101,7 @@
         grid-column-end: 3;
         grid-row-start: 3;
         position: relative;
-        z-index: 99;
+        z-index: 8;
 
         &_block {
             @include flexbox;

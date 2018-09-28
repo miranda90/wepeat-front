@@ -41,6 +41,7 @@
             <use xlink:href="feather-sprite.svg#menu" />
         </svg>
       </div>
+      <div class="explore-menu"></div>
     </nav>
     <router-view/>
   </div>
