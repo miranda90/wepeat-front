@@ -1,6 +1,12 @@
 //Basic parameters
-a[class*='btn'] {
+a[class*='btn'],
+button[class*='btn'] {
     text-decoration: none;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0 2px 15px 0 rgba(#000, 0.08);
+    }
 }
 
 .btn {
@@ -32,36 +38,68 @@ a[class*='btn'] {
         background-color: #fff;
         color: $brand-darker;
         border-color: #fff;
+
+        &:hover {
+            color: $brand-darken;
+            background-color: $brand-ligthen;
+            border-color: $brand-ligthen;
+        }
     }
 
     &--brand {
         border-color: $brand;
         background-color: $brand;
         color: #fff;
+
+        &:hover {
+            background-color: $brand-darker;
+            border-color: $brand-darker;
+        }
     }
 
     &--secondary {
         border-color: $secondary-brand;
         background-color: $secondary-brand;
-        color: #fff
+
+        color: #fff;
+
+        &:hover {
+            background-color: $secondary-brand-ligther;
+            border-color: $secondary-brand-ligther;
+        }
     }
 
     &--alternative-yellow {
         border-color: $alternative-yellow;
         background-color: $alternative-yellow;
         color: $gray-darken;
+
+        &:hover {
+            background-color: lighten($alternative-yellow, 20%);
+            border-color: lighten($alternative-yellow, 20%);
+        }
     }
 
     &--alternative-blue {
         border-color: $alternative-blue;
         background-color: $alternative-blue;
         color: #fff;
+
+        &:hover {
+            background-color: lighten($alternative-blue, 10%);
+            border-color: lighten($alternative-blue, 10%);
+        }
     }
 
     &--alternative-red {
         border-color: $alternative-red;
         background-color: $alternative-red;
         color: #fff;
+
+        &:hover {
+            background-color: lighten($alternative-red, 20%);
+            border-color: lighten($alternative-red, 20%);
+        }
     }
 }
 
