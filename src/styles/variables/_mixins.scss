@@ -300,3 +300,18 @@ xl: 1366px);
 @function max-width-calc($max-width) {
   @return calc((100% - #{$max-width})/2) 1fr calc((100% - #{$max-width})/2);
 }
+
+//Grid mixins
+@mixin grid-elements($elements, $width) {
+  grid-template-columns: repeat($elements, $width);
+}
+
+@mixin grid-col-startend($colstart:1, $colend:1) {
+  grid-column-start: $colstart;
+  grid-column-end: $colend;
+}
+
+@mixin grid-row-startend($rowstart:1, $rowend:1) {
+  grid-row-start: $rowstart;
+  grid-row-end: $rowend;
+}

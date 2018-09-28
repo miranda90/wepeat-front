@@ -39,13 +39,13 @@
 
     &--recipe,
     &--collection {
-        background-color: $brand-ligthen;
-        color: $brand-darken;
+        background-color: $brand;
+        color: #fff;
     }
 
     &--plan {
-        background-color: $secondary-brand-ligthen;
-        color: $secondary-brand-darken;
+        background-color: $secondary-brand;
+        color: #fff;
     }
 
     &--premium {

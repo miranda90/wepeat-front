@@ -21,3 +21,36 @@
 body {
     background-color: $body;
 }
+
+//Containers   
+.grid-section {
+    display: grid;
+    @extend %basic-grid;
+    padding-top: 3rem;
+
+    &:last-child {
+        padding-bottom: 3rem;
+    }
+}
+
+//Grids
+.grid {
+    display: grid;
+}
+
+.grid-elements--3 {
+    @include grid-elements(3, 1fr);
+}
+
+.grid-elements--4 {
+    @include grid-elements(4, 1fr);
+}
+
+.grid-elements--5 {
+    @include grid-elements(5, 1fr);
+}
+
+//Grids Start End
+.grid-c--2 {
+    @include grid-col-startend(2, 2);
+}
