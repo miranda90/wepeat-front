@@ -32,9 +32,9 @@
           <li class="nav_menu_item"><a href="" class="nav_menu_link">Blog</a></li>
         </ul>
         <ul class="nav_loginregister-menu">
-          <li><a href="" class="btn btn-ghost btn-ghost--white">Login</a></li>
+          <li><a href="" class="btn btn--brand">Login</a></li>
           <span class="separator_menu">|</span>
-          <li><a href="" class="btn btn--white">Registro</a></li>
+          <li><a href="" class="btn btn--alternative-yellow">Registro</a></li>
         </ul>
         <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" class="nav-mobilebtn">

@@ -119,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div class="grid grid-2--2">
+      <div class="grid grid-c--2">
         <div class="search-results_info">
           <h3 class="search-results_title title-md">Últimas recetas añadidas</h3>
         </div>
