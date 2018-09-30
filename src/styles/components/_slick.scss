@@ -1,0 +1,12 @@
+//Slick carousel
+.slick-list{
+    width: 100vw;
+}
+
+.slider-onmobile{
+    @include respond-below(sm){
+        .card{
+            padding: 10px;
+        }
+    }
+}

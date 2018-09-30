@@ -16,7 +16,8 @@
         height: 125px;
         width: 70px;
         transform: rotate(40deg);
-        @include flexbox @include align-items(center);
+        @include flexbox;   
+        @include align-items(center);
         @include justify-content(center);
 
         svg {
@@ -82,5 +83,8 @@
     &-excerpt {
         color: $gray;
         font-size: 12px;
+        @include respond-below(md){
+            display: none;
+        }
     }
 }

@@ -1,0 +1,13 @@
+.link{
+    text-decoration: none;
+    &--brand{
+        color: $brand;
+    }
+    &--secondary-brand{
+        color: $secondary-brand;
+    }
+}
+
+.link-seeall{
+    grid-column-start: 3;
+}

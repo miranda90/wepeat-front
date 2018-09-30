@@ -30,6 +30,12 @@ body {
 
     &:last-child {
         padding-bottom: 3rem;
+        @include respond-below(sm){
+            padding-top: 2rem;
+        }
+    }
+    @include respond-below(sm){
+        padding-top: 2rem;
     }
 }
 

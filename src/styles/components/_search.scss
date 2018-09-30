@@ -11,7 +11,7 @@
     overflow: hidden;
 
     @include respond-below(sm) {
-        height: 75vh;
+        height: 60vh;
     }
 
     &_img {
@@ -32,11 +32,11 @@
         }
 
         @include respond-below(xs) {
-            bottom: 50px;
-            min-width: 350px;
+            bottom: -50px;
+            min-width: 300px;
 
             &--left {
-                left: -40vw;
+                left: -30vw;
             }
 
             &--right {
@@ -50,7 +50,7 @@
         grid-column-end: 3;
         grid-row-start: 2;
         position: relative;
-        z-index: 99;
+        z-index: 97;
         max-width: 1200px;
         margin: 0 auto;
 
@@ -69,6 +69,11 @@
         margin-bottom: 15px;
         font-size: 4rem;
         line-height: 5rem;
+
+        @include respond-below(md) {
+            font-size: 3rem;
+            line-height: 5.4rem;
+        }
 
         @include respond-below(md) {
             font-size: 6vw;
@@ -267,22 +272,33 @@
     grid-column-end: 3;
 
     &_info {
-        padding: 20px 0;
+        padding: 0 0 20px 0;
+        @include align-items(center);
+        @include respond-below(sm) {
+            display: grid;
+            grid-template-columns: 1fr 30fr auto 1fr;
+            padding-bottom: 10px;
+        }
     }
 
     &_title {
         grid-row-start: 1;
         text-align: left;
+        @include respond-below(sm) {
+            grid-column-start: 2;
+        }
     }
 
     &_inner {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 2;
-        grid-gap: 20px;
-        grid-template-columns: repeat(5, 1fr);
-        @include justify-content(center);
+        @include respond-above(sm){
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            @include justify-content(center);
+        }
 
         @include respond-below(lg) {
             grid-template-columns: repeat(4, 1fr);
@@ -292,8 +308,5 @@
             grid-template-columns: repeat(3, 1fr);
         }
 
-        @include respond-below(sm) {
-            grid-template-columns: repeat(2, 1fr);
-        }
     }
 }

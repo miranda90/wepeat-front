@@ -1,4 +1,5 @@
 @import 'css-reset-and-normalize/scss/reset-and-normalize.scss';
+@import 'slick-carousel/slick/slick.scss';
 @import './variables/fonts';
 @import './variables/mixins';
 @import './variables/colors';
@@ -10,11 +11,13 @@
 @import './elements/img';
 
 @import './blocks/buttons';
+@import './blocks/link';
 @import './blocks/badges';
 @import './blocks/cards';
 @import './blocks/check';
 @import './blocks/banner';
 
+@import './components/slick';
 @import './components/menu';
 @import './components/filters';
 @import './components/search';
