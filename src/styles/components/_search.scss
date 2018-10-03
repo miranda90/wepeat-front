@@ -14,6 +14,10 @@
         height: 60vh;
     }
 
+    @include respond-below(xs) {
+        height: 75vh;
+    }
+
     &_img {
         position: absolute;
         max-width: 35vw;
@@ -32,15 +36,16 @@
         }
 
         @include respond-below(xs) {
-            bottom: -50px;
             min-width: 300px;
 
             &--left {
                 left: -30vw;
+                bottom: -0vh;
             }
 
             &--right {
-                right: -40vw;
+                right: -25vw;
+                bottom: 5vh;
             }
         }
     }
@@ -107,6 +112,22 @@
         grid-row-start: 3;
         position: relative;
         z-index: 8;
+        transition: width, transform 0.5s ease;
+
+        &:target {
+            display: none;
+        }
+
+        &.active {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+            transform: translateY(-167px);
+
+            .search-cover_searchbox_input {
+                border-radius: 0 !important;
+            }
+        }
 
         &_block {
             @include flexbox;
@@ -139,7 +160,7 @@
             font-weight: 100;
             border: 5px solid #fff;
             box-shadow: 0 5px 10px 0 rgba($brand-darker, 0);
-            transition: box-shadow 0.3s;
+            transition: all 0.3s;
 
             @include respond-below(md) {
                 font-size: 2vw;
@@ -150,6 +171,13 @@
                 font-size: 3.5vw;
                 text-align: left;
                 padding: 0 20px;
+            }
+
+            @include respond-below(xs) {
+                font-size: 4vw;
+                line-height: 40px;
+                padding: 0 10px;
+                box-shadow: 0 5px 30px 0 rgba(#000, 0.3);
             }
 
             &:focus,
@@ -172,6 +200,15 @@
             background-color: $secondary-brand;
             color: #fff;
             border-radius: 50%;
+
+            @include respond-below(xs) {
+                width: 40px;
+                height: 40px;
+
+                svg {
+                    width: 15px;
+                }
+            }
         }
     }
 }
@@ -273,7 +310,10 @@
 
     &_info {
         padding: 0 0 20px 0;
+        @include flexbox;
         @include align-items(center);
+        @include justify-content(space-between);
+
         @include respond-below(sm) {
             display: grid;
             grid-template-columns: 1fr 30fr auto 1fr;
@@ -284,13 +324,14 @@
     &_title {
         grid-row-start: 1;
         text-align: left;
+
         @include respond-below(sm) {
             grid-column-start: 2;
         }
     }
 
     &_inner {
-        @include respond-above(sm){
+        @include respond-above(sm) {
             display: grid;
             grid-column-start: 1;
             grid-column-end: 2;

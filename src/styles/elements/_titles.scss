@@ -35,9 +35,16 @@ h6 {
     font-size: 1.3rem;
     line-height: 2rem;
     font-weight: 600;
-    @include respond-below(sm){
+
+    @include respond-below(sm) {
         font-size: 1.1rem;
         line-height: 1.5rem;
+    }
+
+    @include respond-below(xs) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding-right: 3vw;
     }
 }
 
@@ -45,7 +52,12 @@ h6 {
 .title-line {
     max-width: 10rem;
     margin-top: 30px;
-    @include respond-below(sm){
+
+    @include respond-below(sm) {
         max-width: 6rem;
+    }
+
+    @include respond-below(xs) {
+        margin-top: 20px;
     }
 }

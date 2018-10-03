@@ -1,13 +1,19 @@
-.link{
+.link {
     text-decoration: none;
-    &--brand{
+
+    &--brand {
         color: $brand;
     }
-    &--secondary-brand{
+
+    &--secondary-brand {
         color: $secondary-brand;
     }
 }
 
-.link-seeall{
+.link-seeall {
     grid-column-start: 3;
+
+    @include respond-below(xs) {
+        font-size: 0.8rem;
+    }
 }

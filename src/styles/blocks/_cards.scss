@@ -16,7 +16,7 @@
         height: 125px;
         width: 70px;
         transform: rotate(40deg);
-        @include flexbox;   
+        @include flexbox;
         @include align-items(center);
         @include justify-content(center);
 
@@ -61,8 +61,9 @@
         }
 
         @include respond-below(xs) {
-            font-size: 1rem;
-            line-height: 1.1rem;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            margin-bottom: 10px;
         }
 
         a {
@@ -83,7 +84,8 @@
     &-excerpt {
         color: $gray;
         font-size: 12px;
-        @include respond-below(md){
+
+        @include respond-below(md) {
             display: none;
         }
     }

@@ -36,9 +36,9 @@
           <span class="separator_menu">|</span>
           <li><a href="" class="btn btn--alternative-yellow">Registro</a></li>
         </ul>
-        <button id="btn-mobile">
+        <button id="btn-mobile" class="nav-mobilebtn">
           <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" class="nav-mobilebtn">
+              stroke-linejoin="round" class="">
               <use xlink:href="feather-sprite.svg#menu" />
           </svg>
         </button>

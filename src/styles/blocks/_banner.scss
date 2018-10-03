@@ -29,6 +29,11 @@
         grid-column-start: 2;
     }
 
+    @include respond-below(xs) {
+        height: 35vh;
+        grid-column-start: 2;
+    }
+
     &-content {
         @include flexbox;
         @include flex-direction(column);
@@ -54,6 +59,12 @@
             font-size: 2rem;
             line-height: 2.3rem;
         }
+
+        @include respond-below(xs) {
+            font-size: 1.5rem;
+            line-height: 2rem;
+            margin-bottom: 5px;
+        }
     }
 
     &-line {
@@ -70,6 +81,10 @@
 
         @include respond-below(sm) {
             margin-top: 20px;
+        }
+
+        @include respond-below(xs) {
+            margin-top: 10px;
         }
     }
 }
