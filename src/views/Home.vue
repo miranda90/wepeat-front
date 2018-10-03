@@ -11,7 +11,7 @@
       <div class="search-cover_searchbox">
         <form action="" method="get">
           <div class="search-cover_searchbox_block">
-            <input type="text" class="search-cover_searchbox_input" placeholder="Buscar por planificador, receta, tags...">
+            <input type="text" class="search-cover_searchbox_input" id="search_cover" placeholder="Buscar por planificador, receta, tags...">
             <button class="search-cover_searchbox_btn" type="submit">
               <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">

@@ -63,7 +63,7 @@
         @include respond-below(xs) {
             font-size: 0.8rem;
             line-height: 1rem;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         a {
@@ -76,9 +76,13 @@
         font-style: italic;
         color: $gray-darken;
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         text-decoration: none;
         font-size: 12px;
+
+        @include respond-below(xs) {
+            margin-bottom: 0;
+        }
     }
 
     &-excerpt {

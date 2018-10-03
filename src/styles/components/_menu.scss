@@ -1,6 +1,7 @@
 .nav {
     &--main {
         padding: 10px 0;
+        background: -webkit-gradient(linear, left top, left bottom, from($gradient-blue), to($brand-ligther));
         background: linear-gradient($gradient-blue, $brand-ligther);
         display: grid;
         position: fixed;
@@ -93,25 +94,34 @@
             border-radius: 50%;
             right: 0;
             left: 0;
+            -webkit-transition: all 0.2s;
             transition: all 0.2s;
             opacity: 0;
             top: 50%;
             margin: 0 auto;
             z-index: -1;
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 
             &::before {
                 content: "";
                 border-radius: 0;
+                -webkit-transform: scale(1);
                 transform: scale(1);
+                -webkit-transform-origin: center center;
                 transform-origin: center center;
                 position: absolute;
                 left: 0;
                 right: 0;
                 top: 50%;
+                -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-                background-color: rgba($brand-ligther, 0.95);
-                transition: all 2s;
+                background-color: #fff;
+                -webkit-transition: all 1s;
+                transition: all 1s;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
             }
 
             &.opened {
@@ -122,22 +132,40 @@
                 z-index: 99;
 
                 &::before {
+                    -webkit-transform: scale(30);
                     transform: scale(30);
+                }
+
+                ~.nav-mobilebtn {
+                    position: relative;
+                    z-index: 999;
+                    color: $brand;
+                    -webkit-transform: rotate(90deg);
+                    transform: rotate(90deg);
+                }
+
+                .nav_menu_item {
+                    display: block;
+                    opacity: 1;
                 }
             }
 
             .nav_menu_item {
-                display: none;
+                opacity: 0;
+                position: relative;
+                -webkit-transition: opacity 0.8s ease;
+                -webkit-transition: opacity 0.5s ease;
+                transition: opacity 0.5s ease;
 
                 &:not(:last-child) {
                     .nav_menu_link {
-                        margin-bottom: 25px;
+                        margin-bottom: 40px;
                     }
                 }
             }
 
             .nav_menu_link {
-                color: #fff;
+                color: $brand;
                 text-decoration: none;
                 font-size: 1.5rem;
                 display: block;
@@ -168,6 +196,7 @@
                 color: #fff;
 
                 &:hover {
+                    -webkit-box-shadow: none;
                     box-shadow: none;
                 }
             }
@@ -215,9 +244,21 @@
     border: none;
     margin-left: auto;
     padding: 0;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
 
     @include respond-above(md) {
         display: none;
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+        outline: none;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
     }
 }
 
@@ -231,6 +272,7 @@
     left: 0;
     top: 0;
     background-color: #fff;
+    -webkit-box-shadow: 0 10px 30px 0 rgba(#000, 0.04);
     box-shadow: 0 10px 30px 0 rgba(#000, 0.04);
     z-index: 99;
     border-radius: $border-radius;
