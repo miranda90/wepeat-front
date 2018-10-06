@@ -7,3 +7,22 @@ p {
     font-size: 14px;
     line-height: 1.3rem;
 }
+
+//Modifiers
+.font-bold{
+    font-weight: bold;
+}
+.font-italic{
+    font-style: italic;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+//Text colors
+.text-brand{
+    color: $brand;
+}
+.text-secondary{
+    color: $secondary-brand;
+}

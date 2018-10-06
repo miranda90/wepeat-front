@@ -41,16 +41,19 @@
             margin-left: 3px;
         }
     }
-
+    &--basic{
+        background-color: $brand-ligthen;
+        color: $brand-darken;
+    }
     &--recipe,
     &--collection {
-        background-color: $brand;
-        color: #fff;
+        background-color: $brand-ligthen;
+        color: $brand-darken;
     }
 
     &--plan {
-        background-color: $secondary-brand;
-        color: #fff;
+        background-color: $secondary-brand-ligthen;
+        color: $secondary-brand-darken;
     }
 
     &--premium {

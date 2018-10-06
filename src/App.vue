@@ -34,7 +34,7 @@
         <ul class="nav_loginregister-menu">
           <li><a href="" class="btn btn--brand">Login</a></li>
           <span class="separator_menu">|</span>
-          <li><a href="" class="btn btn--alternative-yellow">Registro</a></li>
+          <li><a href="" class="btn btn--brand-ligthen">Registro</a></li>
         </ul>
         <button id="nav_mobilebtn" class="nav-mobilebtn" onclick="">
           <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

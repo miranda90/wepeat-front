@@ -1,25 +1,46 @@
 <template>
   <div>
     <div class="search-cover">
-      <div class="search-cover_content">
-        <h1 class="search-cover_title">
-          ¿Estás buscando un planificador?
-        </h1>
-        <h5 class="search-cover_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-        <img src="../assets/line.svg" alt="" class="title-line">
-      </div>
-      <div class="search-cover_searchbox">
-        <form action="" method="get">
-          <div class="search-cover_searchbox_block">
-            <input type="text" class="search-cover_searchbox_input" id="search_cover" placeholder="Buscar por planificador, receta, tags...">
-            <button class="search-cover_searchbox_btn" type="submit">
-              <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round">
-                <use xlink:href="feather-sprite.svg#search" />
-              </svg>
-            </button>
-          </div>
-        </form>
+      <div class="search-cover_block">
+        <div class="search-cover_content">
+          <h1 class="search-cover_title">
+            ¿Estás buscando un planificador?
+          </h1>
+          <h5 class="search-cover_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+          <img src="../assets/line.svg" alt="" class="title-line">
+        </div>
+        <div class="search-cover_searchbox">
+          <form action="" method="get">
+            <div class="search-cover_searchbox_block">
+              <input type="text" class="search-cover_searchbox_input" id="search_cover" placeholder="Buscar por planificador, receta, tags...">
+              <button class="search-cover_searchbox_btn" type="submit">
+                <svg width="25" height="25" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <use xlink:href="feather-sprite.svg#search" />
+                </svg>
+              </button>
+            </div>
+            <div class="search-cover_searchbox_results">
+              <ul class="search-cover_searchbox_results_list">
+                <li class="search-cover_searchbox_results_item">
+                  <a href="" class="search-cover_searchbox_results_link">
+                    <span>Buscar</span> <span class="font-bold">"Palabra clave"</span> <span>en</span> <span class="text-brand font-bold">planificadores</span>
+                  </a>
+                </li>
+                <li class="search-cover_searchbox_results_item">
+                  <a href="" class="search-cover_searchbox_results_link">
+                    <span>Buscar</span> <span class="font-bold">"Palabra clave"</span> <span>en</span> <span class="text-brand font-bold">planificadores</span>
+                  </a>
+                </li>
+                <li class="search-cover_searchbox_results_item">
+                  <a href="" class="search-cover_searchbox_results_link">
+                    <span>Buscar</span> <span class="font-bold">"Palabra clave"</span> <span>en</span> <span class="text-brand font-bold">planificadores</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
       </div>
       <img src="../assets/meal2-png.png" alt="" class="search-cover_img search-cover_img--left">
       <img src="../assets/meal-png.png" alt="" class="search-cover_img search-cover_img--right">
@@ -101,7 +122,7 @@
           <div class="banner">
             <img src="../assets/banner2.jpg" alt="" class="img-responsive">
             <div class="banner-content">
-              <span class="badge badge-card badge--recipe">New collection</span>
+              <span class="badge badge-card badge--basic">New collection</span>
               <div class="banner-title">Banner title</div>
               <img src="../assets/line.svg" alt="" class="banner-line">
               <a href="" class="banner-link">Descúbrelo</a>

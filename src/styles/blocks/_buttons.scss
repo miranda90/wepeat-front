@@ -55,6 +55,11 @@ button[class*='btn'] {
             background-color: $brand-darker;
             border-color: $brand-darker;
         }
+        &-ligthen{
+            border-color: $brand-ligthen;
+            background-color: $brand-ligthen;
+            color: $brand-darken;
+        }
     }
 
     &--secondary {
