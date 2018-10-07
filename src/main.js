@@ -6,26 +6,35 @@ window.$ = require('jquery');
 window.JQuery = require('jquery');
 const feather = require('feather-icons');
 const slick = require('slick-carousel');
+const aos = require('aos');
 
 new Vue({
   router,
   render: h => h(App),
 }).$mount('#app');
 
-if (window.matchMedia('(max-width: 767px)').matches) {
-  $('.slider-onmobile').slick({
-    slidesToShow: 1,
-    infinite: true,
-    dots: false,
-    arrows: false,
-    lazyLoad: 'progressive',
-    centerMode: true,
-  });
-}
+$(document).ready(function(){
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    $('.slider-onmobile').slick({
+      slidesToShow: 1,
+      infinite: true,
+      dots: false,
+      arrows: false,
+      lazyLoad: 'progressive',
+      centerMode: true,
+    });
+  }
+  menuMain.openMobile();
+  menuMain.openExplore();
+  searchCover.searchMobile();
+  skLoading.skLoaded();
+});
 
-const menuMobile = {
-  openMobile() {
-    let opened = false;
+
+
+const menuMain = {
+  openMobile: function() {
+    var opened = false;
     $('#nav_mobilebtn').click(() => {
       if (opened == false) {
         $('.nav_right-menu').addClass('opened');
@@ -36,12 +45,22 @@ const menuMobile = {
       }
     });
   },
+  openExplore: function(){
+    var opened = false;
+    $('#btn_explore').click(() => {
+      if (opened == false) {
+        $('.explore-menu').addClass('opened');
+        opened = true;
+      } else {
+        $('.explore-menu').removeClass('opened');
+        opened = false;
+      }
+    });
+  }
 };
 
-menuMobile.openMobile();
-
 const searchCover = {
-  searchMobile() {
+  searchMobile: function() {
     $('#search_cover').focusin(function () {
       $('.search-cover_searchbox').addClass('active');
     });
@@ -51,7 +70,7 @@ const searchCover = {
   },
 };
 
-searchCover.searchMobile();
+
 
 const skLoading = {
   skLoaded : function() {
@@ -66,4 +85,10 @@ const skLoading = {
   }
 };
 
-skLoading.skLoaded();
+
+
+aos.init({
+  duration: 700,
+  easing: 'ease-in-out-back',
+  anchorPlacement: 'bottom-bottom',
+});

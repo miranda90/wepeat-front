@@ -42,8 +42,8 @@
           </form>
         </div>
       </div>
-      <img src="../assets/meal2-png.png" alt="" class="search-cover_img search-cover_img--left">
-      <img src="../assets/meal-png.png" alt="" class="search-cover_img search-cover_img--right">
+      <img src="../assets/meal2-png.png" alt="" class="search-cover_img search-cover_img--left" data-aos="fade-right" data-aos-delay="400">
+      <img src="../assets/meal-png.png" alt="" class="search-cover_img search-cover_img--right" data-aos="fade-left">
     </div>
     <section class="grid-section">
       <div class="grid grid-c--2">

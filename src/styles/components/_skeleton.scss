@@ -7,19 +7,28 @@
         background-color: #fff;
         z-index: 8;
         height: 100%;
+        @include respond-below(sm){
+            padding: 10px;
+        }
         &_img{
-            height:18vh;
+            height:20vh;
             border-radius: $border-radius;
             background-color: $gray-ligthen;
             @extend %skeleton-animation;
+            @include respond-above(sm){
+                height: 19vh;
+            }
         }
         &_title{
             width: 70%;
             background-color: $gray-ligthen;
             @extend %skeleton-animation;
-            height: 25px;
+            height: 20px;
             border-radius: $border-radius;
             margin-top: 10px;
+            @include respond-above(sm){
+                margin-top: 20px;
+            }
         }
         &_category{
             width: 30%;
@@ -31,6 +40,12 @@
         }
         &_excerpt{
             margin-top: 15px;
+            @include respond-above(sm){
+                margin-top: 20px;
+            }
+            @include respond-below(sm){
+                display: none;
+            }
             span{
                 background-color: $gray-ligthen;
                 @extend %skeleton-animation;
@@ -40,9 +55,15 @@
                 &:first-child{
                     width: 100%;
                     margin-bottom: 5px;
+                    @include respond-above(sm){
+                        margin-bottom: 10px;
+                    }
                 }
                 &:last-child{
                     width: 60%;
+                }
+                @include respond-above(sm){
+                    height: 10px;
                 }
             }
         }
@@ -63,12 +84,15 @@
             width: 60%;
             background-color: lighten($gray-ligthen,10);
             @extend %skeleton-animation;
-            height: 40px;
+            height: 20px;
             border-radius: $border-radius;
             margin: 0 auto;
+            @include respond-above(sm){
+                height: 30px;
+            }
         }
         &_line{
-            width: 100px;
+            width: 80px;
             background-color: lighten($gray-ligthen,10);
             @extend %skeleton-animation;
             height: 10px;
@@ -77,12 +101,15 @@
             margin: 20px auto 0;
         }
         &_link{
-            width: 150px;
+            width: 120px;
             background-color: lighten($gray-ligthen,10);
             @extend %skeleton-animation;
-            height: 15px;
+            height: 10px;
             border-radius: $border-radius;
             margin: 25px auto 0;
+            @include respond-above(sm){
+                height: 15px;
+            }
         }
     }
 }
