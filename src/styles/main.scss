@@ -1,7 +1,10 @@
 @import 'css-reset-and-normalize/scss/reset-and-normalize.scss';
 @import 'slick-carousel/slick/slick.scss';
+
+
 @import './variables/fonts';
 @import './variables/mixins';
+@import './variables/keyframes';
 @import './variables/colors';
 @import './variables/measures';
 
@@ -17,6 +20,7 @@
 @import './blocks/check';
 @import './blocks/banner';
 
+@import './components/skeleton';
 @import './components/slick';
 @import './components/menu';
 @import './components/filters';

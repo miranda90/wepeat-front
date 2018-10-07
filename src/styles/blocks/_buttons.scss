@@ -59,13 +59,16 @@ button[class*='btn'] {
             border-color: $brand-ligthen;
             background-color: $brand-ligthen;
             color: $brand-darken;
+            &:hover {
+                background-color: lighten($brand-ligthen,5%);
+                border-color: lighten($brand-ligthen,5%);
+            }
         }
     }
 
     &--secondary {
         border-color: $secondary-brand;
         background-color: $secondary-brand;
-
         color: #fff;
 
         &:hover {

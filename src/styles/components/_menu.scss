@@ -81,7 +81,7 @@
 
     &_right-menu {
         @include justify-content(flex-end);
-
+        margin-right: 30px;
         @media(max-width: 992px) {
             @include flexbox;
             @include flex-direction(column);

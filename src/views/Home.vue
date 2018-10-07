@@ -52,7 +52,13 @@
           <a href="#" class="link link--brand link-seeall">Ver todas</a>
         </div>
         <div class="search-results_inner slider-onmobile">
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <img src="../assets/meal.jpg" class="img-responsive" alt="">
             </div>
@@ -63,7 +69,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <img src="../assets/meal.jpg" class="img-responsive" alt="">
             </div>
@@ -74,7 +86,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <div class="badge badge-card_info badge--plan">
                 <span class="card-days">30</span>
@@ -92,7 +110,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card card--premium">
+          <div class="card card--premium" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <div class="card-ribbon">
                 <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -111,7 +135,12 @@
           </div>
         </div>
         <div class="banners-block">
-          <div class="banner">
+          <div class="banner" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-banner">
+              <div class="skeleton-banner_title"></div>
+              <div class="skeleton-banner_line"></div>
+              <div class="skeleton-banner_link"></div>
+            </div>
             <img src="../assets/banner.jpg" alt="" class="img-responsive">
             <div class="banner-content">
               <div class="banner-title">Banner title</div>
@@ -119,7 +148,12 @@
               <a href="" class="banner-link">Descúbrelo</a>
             </div>
           </div>
-          <div class="banner">
+          <div class="banner" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-banner">
+              <div class="skeleton-banner_title"></div>
+              <div class="skeleton-banner_line"></div>
+              <div class="skeleton-banner_link"></div>
+            </div>
             <img src="../assets/banner2.jpg" alt="" class="img-responsive">
             <div class="banner-content">
               <span class="badge badge-card badge--basic">New collection</span>
@@ -136,7 +170,13 @@
           <a href="#" class="link link--brand link-seeall">Ver todas</a>
         </div>
         <div class="search-results_inner slider-onmobile">
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <img src="../assets/meal.jpg" class="img-responsive" alt="">
             </div>
@@ -147,7 +187,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <img src="../assets/meal.jpg" class="img-responsive" alt="">
             </div>
@@ -158,7 +204,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <div class="badge badge-card_info badge--plan">
                 <span class="card-days">30</span>
@@ -176,7 +228,13 @@
               <p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
             </div>
           </div>
-          <div class="card card--premium">
+          <div class="card card--premium" data-skeleton="is-skeleton">
+            <div class="skeleton skeleton-card">
+              <div class="skeleton-card_img"></div>
+              <div class="skeleton-card_title"></div>
+              <div class="skeleton-card_category"></div>
+              <div class="skeleton-card_excerpt"><span></span><span></span></div>
+            </div>
             <div class="card-img">
               <div class="card-ribbon">
                 <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

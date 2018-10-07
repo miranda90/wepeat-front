@@ -52,3 +52,18 @@ const searchCover = {
 };
 
 searchCover.searchMobile();
+
+const skLoading = {
+  skLoaded : function() {
+    $('div[data-skeleton="is-skeleton"]').each(function(index) {
+      var sk = $(this).find('.skeleton');
+      setTimeout(function(){
+        sk.fadeOut(300,function(){
+          $(this).remove();
+        });
+      },200*index);
+  });
+  }
+};
+
+skLoading.skLoaded();

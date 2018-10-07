@@ -1,0 +1,88 @@
+.skeleton{
+    &-card{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 8;
+        height: 100%;
+        &_img{
+            height:18vh;
+            border-radius: $border-radius;
+            background-color: $gray-ligthen;
+            @extend %skeleton-animation;
+        }
+        &_title{
+            width: 70%;
+            background-color: $gray-ligthen;
+            @extend %skeleton-animation;
+            height: 25px;
+            border-radius: $border-radius;
+            margin-top: 10px;
+        }
+        &_category{
+            width: 30%;
+            background-color: $gray-ligthen;
+            @extend %skeleton-animation;
+            height: 10px;
+            border-radius: $border-radius;
+            margin-top: 7px;
+        }
+        &_excerpt{
+            margin-top: 15px;
+            span{
+                background-color: $gray-ligthen;
+                @extend %skeleton-animation;
+                height: 15px;
+                border-radius: $border-radius;
+                display: block;
+                &:first-child{
+                    width: 100%;
+                    margin-bottom: 5px;
+                }
+                &:last-child{
+                    width: 60%;
+                }
+            }
+        }
+    }
+    &-banner{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: $gray-ligthen;
+        z-index: 8;
+        height: 100%;
+        @include flexbox;
+        @include justify-content(center);
+        @include align-items(center);
+        @include flex-direction(column);
+        &_title{
+            width: 60%;
+            background-color: lighten($gray-ligthen,10);
+            @extend %skeleton-animation;
+            height: 40px;
+            border-radius: $border-radius;
+            margin: 0 auto;
+        }
+        &_line{
+            width: 100px;
+            background-color: lighten($gray-ligthen,10);
+            @extend %skeleton-animation;
+            height: 10px;
+            border-radius: $border-radius;
+            display: block;
+            margin: 20px auto 0;
+        }
+        &_link{
+            width: 150px;
+            background-color: lighten($gray-ligthen,10);
+            @extend %skeleton-animation;
+            height: 15px;
+            border-radius: $border-radius;
+            margin: 25px auto 0;
+        }
+    }
+}

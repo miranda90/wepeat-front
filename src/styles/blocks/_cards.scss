@@ -1,6 +1,6 @@
 .card {
     text-align: left;
-
+    position: relative;
     &--premium {
         .card-ribbon {
             background-color: $alternative-yellow;
