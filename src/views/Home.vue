@@ -80,8 +80,106 @@
 							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
 						</div>
 					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--plan">
+								<span class="card-days">30</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#calendar" />
+								</svg>
+							</div>
+							<img src="../assets/card.png" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--plan">Planificador</a>
+							<h3 class="card-title"><a href="#">Rutina fitness proteica</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--plan">
+								<span class="card-days">30</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#calendar" />
+								</svg>
+							</div>
+							<img src="../assets/card.png" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--plan">Planificador</a>
+							<h3 class="card-title"><a href="#">Rutina fitness proteica</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--plan">
+								<span class="card-days">30</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#calendar" />
+								</svg>
+							</div>
+							<img src="../assets/card.png" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--plan">Planificador</a>
+							<h3 class="card-title"><a href="#">Rutina fitness proteica</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--plan">
+								<span class="card-days">30</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#calendar" />
+								</svg>
+							</div>
+							<img src="../assets/card.png" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--plan">Planificador</a>
+							<h3 class="card-title"><a href="#">Rutina fitness proteica</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum suscipic.</p>
+						</div>
+					</div>
 				</div>
-				<div class="banners-block">
+			</div>
+			<div class="banners-block full-width bg--gray-ligthen">
+				<div class="banners-block_inner grid-elements--2">
 					<div class="banner" data-skeleton="is-skeleton">
 						<div class="skeleton skeleton-banner">
 							<div class="skeleton-banner_title"></div>
@@ -117,6 +215,106 @@
 					<a href="#" class="link link--brand link-seeall">Ver todas</a>
 				</div>
 				<div class="search-results_inner slider-onmobile">
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--recipe">
+								<span class="card-days">30'</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#clock" />
+								</svg>
+							</div>
+							<img src="../assets/meal.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--recipe">Receta</a>
+							<h3 class="card-title"><a href="#">Rollitos de jamón y queso</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum
+								suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--recipe">
+								<span class="card-days">30'</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#clock" />
+								</svg>
+							</div>
+							<img src="../assets/meal.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--recipe">Receta</a>
+							<h3 class="card-title"><a href="#">Rollitos de jamón y queso</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum
+								suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--recipe">
+								<span class="card-days">30'</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#clock" />
+								</svg>
+							</div>
+							<img src="../assets/meal.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--recipe">Receta</a>
+							<h3 class="card-title"><a href="#">Rollitos de jamón y queso</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum
+								suscipic.</p>
+						</div>
+					</div>
+					<div class="card" data-skeleton="is-skeleton">
+						<div class="skeleton skeleton-card">
+							<div class="skeleton-card_img"></div>
+							<div class="skeleton-card_title"></div>
+							<div class="skeleton-card_category"></div>
+							<div class="skeleton-card_excerpt"><span></span><span></span></div>
+						</div>
+						<div class="card-img">
+							<div class="badge badge-card_info badge-card_info--recipe">
+								<span class="card-days">30'</span>
+								<svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+								 stroke-linejoin="round">
+									<use xlink:href="../assets/feather-sprite.svg#clock" />
+								</svg>
+							</div>
+							<img src="../assets/meal.jpg" class="img-responsive" alt="">
+						</div>
+						<div class="card-content">
+							<a href="" class="badge badge-card badge--recipe">Receta</a>
+							<h3 class="card-title"><a href="#">Rollitos de jamón y queso</a></h3>
+							<a href="" class="card-category">Category card</a>
+							<p class="card-excerpt">Lorem ipsum dolor sit amet, consect adipisci elit. condimentum
+								suscipic.</p>
+						</div>
+					</div>
 					<div class="card" data-skeleton="is-skeleton">
 						<div class="skeleton skeleton-card">
 							<div class="skeleton-card_img"></div>

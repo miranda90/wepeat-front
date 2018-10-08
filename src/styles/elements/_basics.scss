@@ -22,6 +22,11 @@ body {
     background-color: $body;
 }
 
+//BG Colors
+.bg--gray-ligthen {
+    background-color: $featured-section;
+}
+
 //Containers   
 .grid-section {
     display: grid;
@@ -46,6 +51,10 @@ body {
     display: grid;
 }
 
+.grid-elements--2 {
+    @include grid-elements(2, 1fr);
+}
+
 .grid-elements--3 {
     @include grid-elements(3, 1fr);
 }
@@ -61,4 +70,8 @@ body {
 //Grids Start End
 .grid-c--2 {
     @include grid-col-startend(2, 2);
+}
+
+.full-width {
+    @include grid-col-startend(1, 4);
 }
