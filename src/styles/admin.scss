@@ -1,0 +1,40 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import './variables/fonts';
+@import './variables/mixins';
+@import './variables/keyframes';
+@import './variables/colors';
+@import './variables/measures';
+
+//Elements
+@import './elements/basics';
+@import './elements/text';
+@import './elements/titles';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "~font-awesome/scss/font-awesome";
+
+@import './admin/admin_default';
+
+
+.tag-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.tag-list-enter-active,
+.tag-list-leave-active {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.tag-list-enter,
+.tag-list-leave-to {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+}

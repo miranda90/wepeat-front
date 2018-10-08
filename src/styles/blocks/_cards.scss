@@ -1,6 +1,7 @@
 .card {
     text-align: left;
     position: relative;
+
     &--premium {
         .card-ribbon {
             background-color: $alternative-yellow;
@@ -15,12 +16,14 @@
         text-align: center;
         height: 125px;
         width: 70px;
+        -webkit-transform: rotate(40deg);
         transform: rotate(40deg);
         @include flexbox;
         @include align-items(center);
         @include justify-content(center);
 
         svg {
+            -webkit-transform: rotate(-40deg);
             transform: rotate(-40deg);
             position: absolute;
             left: 35px;
@@ -30,11 +33,11 @@
 
     &-img {
         position: relative;
-        border-radius: 5px;
+        border-radius: $border-radius;
         overflow: hidden;
 
         img {
-            border-radius: 5px;
+            border-radius: $border-radius;
         }
     }
 
@@ -76,7 +79,6 @@
         font-style: italic;
         color: $gray-darken;
         display: block;
-        margin-bottom: 15px;
         text-decoration: none;
         font-size: 12px;
 
@@ -88,9 +90,47 @@
     &-excerpt {
         color: $gray;
         font-size: 12px;
+        margin-top: 15px;
 
         @include respond-below(md) {
             display: none;
+        }
+    }
+}
+
+.card-all {
+    text-decoration: none;
+
+    @include respond-below(sm) {
+        padding: 10px;
+    }
+
+    &_inner {
+        height: 24vh;
+        // background-color: $brand-ligthen;
+        // border: 1px solid $brand-ligthen;
+        // border-radius: $border-radius;
+        color: $brand;
+        -webkit-box-shadow: 0 5px 20px 0 rgba(#000, 0.03);
+        box-shadow: 0 5px 20px 0 rgba(#000, 0.03);
+        text-decoration: none;
+        @include flexbox;
+        @include align-items(center);
+        @include justify-content(center);
+        @include flex-direction(column);
+
+
+        @include respond-above(sm) {
+            height: 14.2vh;
+        }
+
+        @include respond-above(xl) {
+            height: 19vh;
+        }
+
+        span {
+            display: block;
+            margin-top: 10px;
         }
     }
 }

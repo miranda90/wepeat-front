@@ -1,26 +1,85 @@
+@-webkit-keyframes pulse {
+    0% {
+        background-color: rgba(165, 165, 165, 0.1);
+    }
+
+    50% {
+        background-color: rgba(165, 165, 165, 0.3);
+    }
+
+    100% {
+        background-color: rgba(165, 165, 165, 0.1);
+    }
+}
+
 @keyframes pulse {
     0% {
         background-color: rgba(165, 165, 165, 0.1);
     }
+
     50% {
         background-color: rgba(165, 165, 165, 0.3);
     }
+
     100% {
         background-color: rgba(165, 165, 165, 0.1);
     }
 }
-%skeleton-animation{
-    animation: pulse 1s infinite ease-in-out;
+
+%skeleton-animation {
+    -webkit-animation: pulse 1s infinite ease-in-out;
+            animation: pulse 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes showMenu {
+    0% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+    100% {
+        -webkit-transform: scale(100);
+                transform: scale(100);
+    }
 }
 
 @keyframes showMenu {
     0% {
-        transform: scale(1);
+        -webkit-transform: scale(1);
+                transform: scale(1);
     }
+
     100% {
-        transform: scale(100);
+        -webkit-transform: scale(100);
+                transform: scale(100);
     }
 }
-%menu-animation{
-    animation: showMenu 1s forwards ease;
+
+%menu-animation {
+    -webkit-animation: showMenu 1s forwards ease;
+            animation: showMenu 1s forwards ease;
+}
+
+@-webkit-keyframes showFade {
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes showFade {
+    0% {
+        top: 50px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
 }

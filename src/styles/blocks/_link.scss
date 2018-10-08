@@ -12,6 +12,7 @@
 
 .link-seeall {
     grid-column-start: 3;
+    white-space: nowrap;
 
     @include respond-below(xs) {
         font-size: 0.8rem;
